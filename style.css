@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
 }
-body{
+html, body{
     height: 100%;
-    width: 100%;
+}
+body{
     background: rgb(54,77,204);
     background: linear-gradient(180deg, rgba(54,77,204,1) 100%, rgba(17,40,167,1) 100%, rgba(4,21,113,1) 100%);
-    background-repeat:no-repeat;
     font-family: 'Raleway', sans-serif;
     color: white;
 }
@@ -44,6 +44,7 @@ h2{
 .links{
     text-align: center;
     list-style: none;
+    height: 10vh;
 }
 .links li a{
     display: inline-block;
@@ -59,4 +60,9 @@ h2{
 }
 strong{
     color:rgb(54,77,204);
+}
+@media (max-width:420px) {
+    html, body{
+        height: 100%;
+    }
 }
